@@ -1,0 +1,85 @@
+body {
+    font-family: "didot", serif;
+    padding: 20px;
+    background-color: lightgoldenrodyellow
+}
+.header {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    background-color: lightpink
+}
+.flexbox-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    gap: 30px;
+        }
+ .row {
+  display: flex;
+  border: .5px solid lightgoldenrodyellow;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.flexbox-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    gap: 30px;
+        }
+.container {
+  display: flex;  
+  gap: 20px; 
+  flex-direction: row;
+}
+
+.box {
+  flex: 1;        
+  padding: 20px;
+  background-color: lightblue;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.Flex-container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  gap: 30px;
+}
+ 
+.column {
+  float: left;
+  width: 500px;
+  padding: 5px;
+
+}
+
+ 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.table-img {
+    max-width: 100%;
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes extra space below the image */
+}
+
+ 
+ 
+@media screen and (max-width: 700px) { .flexbox-container1 { flex-direction: column; } }
+@media screen and (max-width: 700px) { .container { flex-direction: column; } }
